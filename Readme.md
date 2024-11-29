@@ -22,6 +22,9 @@ python shongxbong_auto_nominate.py
 ```
 ### **That's it :)** 
 
+![How it Looks From Inside](https://github.com/AbdellahDev64/Alaa-Engine-Edited/blob/main/2024-11-29-14-55-25-_online-video-cutter.com_.gif?raw=true)
+
+
 You will notice a new file is created called **joy_awards_accounts_nominate_shongxbong.ini**, which contains all accounts that nominate ShongXBong in the JoyAwards in the following format:
 ```text
 accessToken:'Bearer XXXXXXXXXXXXXXXXX', JWTOKEN:'XXXXXXXXXXXXXXXXXX'
