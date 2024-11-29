@@ -10,7 +10,7 @@ def prepareAccount()->dict:
         time.sleep(2)
         otp:str=utils.extractEmailOTPCode(email=email)
         response=joyAwardsAPI.verifyOTP(email=email,password=password,otp=otp)
-        return {"success": created and response["success"], "bearerToken": response["accessToken"] if "accessToken" in response else None, "jwtoken": response["JWTOKEN"] if "JWTOKEN" in response else None}
+        return {"success": created and response["success"], "password":password, "bearerToken": response["accessToken"] if "accessToken" in response else None, "jwtoken": response["JWTOKEN"] if "JWTOKEN" in response else None}
     except:
         return {"success":False}
 
@@ -34,7 +34,7 @@ def main():
             nominated:bool=nominateShongXBong(account["bearerToken"])
             if(nominated): 
                 nominated_count+=1
-                utils.appendJOYAWARDSAccount(account["bearerToken"],account["jwtoken"])
+                utils.appendJOYAWARDSAccount(account["bearerToken"],account["jwtoken"],account["password"])
         print(f"=====================< {nominated_count} >=====================")
 
 
