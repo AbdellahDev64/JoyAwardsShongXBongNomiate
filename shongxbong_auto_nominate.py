@@ -1,4 +1,4 @@
-import joyAwardsAPI, time,randomizer, utils
+import joyAwardsAPI, time,randomizer, utils, os
 
 
 def prepareAccount()->dict:
@@ -17,12 +17,13 @@ def prepareAccount()->dict:
 def nominateShongXBong(accessToken:str)->bool:
     SHONGXBONG_CONTESTANTID="673776146b0da3a2c6b6012a"
     SHONGXBONG_SUBCATEGORYID="614482a10684091e660624ea"
-    return joyAwardsAPI.nominateContestant(SHONGXBONG_CONTESTANTID, SHONGXBONG_SUBCATEGORYID, accessToken,"SHoNgxBоNg")
+    return joyAwardsAPI.nominateContestant(SHONGXBONG_CONTESTANTID, SHONGXBONG_SUBCATEGORYID, accessToken,"SHoNgxBoNg")
 
 def main():
     nominated_count:int=0
-    with open("joy_awards_accounts_nominate_shongxbong.ini", "r") as file:
-        nominated_count = sum(1 for line in file) +1
+    if os.path.exists("joy_awards_accounts_nominate_shongxbong.ini"):
+        with open("joy_awards_accounts_nominate_shongxbong.ini", "r") as file:
+            nominated_count = sum(1 for line in file) +1
     while(True):
         account=None
         try:
