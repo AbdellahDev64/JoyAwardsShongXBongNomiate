@@ -15,8 +15,8 @@ def extractEmailOTPCode(email:str)->str:
     extracted_code = match.group(1) or match.group(2)
     return extracted_code
 
-def appendJOYAWARDSAccount(accessToken:str, JWToken:str)->bool:
+def appendJOYAWARDSAccount(accessToken:str, JWToken:str, password:str)->bool:
     with open("joy_awards_accounts_nominate_shongxbong.ini","+a") as file:
-        file.write(f"accessToken:'{accessToken}', JWTOKEN:'{JWToken}'\n")
+        file.write(f"accessToken:'{accessToken}', JWTOKEN:'{JWToken}', PASSWORD: '{password}'\n")
         return True
     return False
