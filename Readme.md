@@ -12,7 +12,7 @@ His success at the JoyAwards was a significant milestone, further solidifying hi
 ## Installation 💻
 In the terminal:
 ```bash
-pip install omkar-temp-mail names
+pip install omkar-temp-mail names requests
 git clone https://github.com/AbdellahDev64/JoyAwardsShongXBongNominate.git
 ```
 ## Usage ▶️
