@@ -29,13 +29,13 @@ python shongxbong_auto_nominate.py
 
 You will notice a new file is created called **joy_awards_accounts_nominate_shongxbong.ini**, which contains all accounts that nominate ShongXBong in the JoyAwards in the following format:
 ```text
-accessToken:'Bearer XXXXXXXXXXXXXXXXX', JWTOKEN:'XXXXXXXXXXXXXXXXXX'
+accessToken:'Bearer XXXXXXXXXXXXXXXXX', JWTOKEN:'XXXXXXXXXXXXXXXXXX', PASSWORD:'XXXXXXXXXXXX'
 
 // Meaning:
 accessToken: The Bearer Token for the JoyAwards session (valid for 120h before expiration)
 JWTOKEN: Can be decoded at https://jwt.io/ to retrieve all account data, 
-         such as email & password (or app_passcode, encoded in SHA256, which can 
-         be decoded easily using https://md5decrypt.net/en/Sha256/)
+         such as email.
+PASSWORD: JoyAwards account's password.
 ```
 ![JOYAWARDS_JWTOKEN](https://github.com/AbdellahDev64/Alaa-Engine-Edited/blob/main/Acc.png?raw=true)
 
