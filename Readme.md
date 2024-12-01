@@ -8,6 +8,8 @@ This Python script automates the process of nominating ShongXBong in the JoyAwar
 **ShongXBong**, also known as **Ahmed Al-Qahtani**, is a prominent Saudi influencer and YouTuber with over **13 million followers**. He creates engaging content primarily focused on **gaming** and **e-sports**. His vibrant personality and dedication to his craft have earned him several accolades, including **"Best Streamer"** and **"Best Content Creator"** awards from **2021** to **2023**. Most notably, he won the **"Favourite Male Influencer"** award at the **2024 Joy Awards**, a prestigious event held in Riyadh that celebrates the global entertainment industry.
 
 His success at the JoyAwards was a significant milestone, further solidifying his influence within the gaming and entertainment sectors. Fans and supporters are now rallying behind him to ensure he secures **another win in 2025**.
+## Tutorial
+[![tuto](https://img.youtube.com/vi/F6Vu_xMcu-A/0.jpg)](https://www.youtube.com/watch?v=F6Vu_xMcu-A)
 
 ## Installation 💻
 In the terminal:
